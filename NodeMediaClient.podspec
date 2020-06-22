@@ -7,7 +7,10 @@ Pod::Spec.new do |s|
   s.homepage      = 'http://www.nodemedia.cn'
   s.author        = { 'Mingliang Chen' => 'illuspas@gmail.com' }
   s.source        = { :git => 'https://github.com/NodeMedia/NodeMediaClient-iOS.git', :tag => s.version }
-  s.platform      = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '8.12'
+  s.tvos.deployment_target = '8.0'
+  s.watchos.deployment_target = '3.0'
   s.source_files  = 'NodeMediaClient/NodeMediaClient.framework/Headers/*.{h}'
   s.vendored_frameworks = 'NodeMediaClient/NodeMediaClient.framework'
   s.public_header_files = 'NodeMediaClient/NodeMediaClient.framework/Headers/NodeMediaClient.h'
